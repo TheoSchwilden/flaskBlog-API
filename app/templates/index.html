@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes de l'API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Routes de l'API</h1>
+
+    <h2>Routes d'authentification</h2>
+    <table>
+        <tr>
+            <th>Méthode</th>
+            <th>Route</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/auth/register</td>
+            <td>Créer un nouveau compte utilisateur</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/auth/login</td>
+            <td>Se connecter à un compte existant</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/auth/logout</td>
+            <td>Se déconnecter du compte actuel</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/auth/check_auth</td>
+            <td>Vérifier l'état d'authentification de l'utilisateur</td>
+        </tr>
+    </table>
+
+    <h2>Routes du blog</h2>
+    <table>
+        <tr>
+            <th>Méthode</th>
+            <th>Route</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/blog/posts</td>
+            <td>Récupérer tous les articles du blog</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/blog/posts/&lt;id&gt;</td>
+            <td>Récupérer un article spécifique par son ID</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/blog/posts</td>
+            <td>Créer un nouvel article de blog</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/blog/posts/&lt;id&gt;</td>
+            <td>Mettre à jour un article existant</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/blog/posts/&lt;id&gt;</td>
+            <td>Supprimer un article existant</td>
+        </tr>
+    </table>
+</body>
+</html>

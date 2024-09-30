@@ -1,0 +1,8 @@
+POST http://127.0.0.1:5000/api/blog/post
+Content-Type: application/json
+
+{
+  "title": "je m'appelle tom",
+  "content": "Je code un blog et je regarde des canapés",
+  "user_id": "1" 
+}

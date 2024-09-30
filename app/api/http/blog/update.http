@@ -1,0 +1,7 @@
+PUT http://127.0.0.1:5000/api/blog/post/7
+Content-Type: application/json
+
+{
+  "title": "Je suis nul a diablo",
+  "content": "j'ai 98 personnages niveau 68 et je n'ai jamais fini le jeu"
+}

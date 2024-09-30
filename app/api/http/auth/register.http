@@ -1,0 +1,21 @@
+### Register User Test ###
+
+### Register User Request ###
+POST http://127.0.0.1:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "theo",
+  "email": "theo@theo.com",
+  "password": "1234567"
+}
+
+### Register User Response ###
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "message": "User registered successfully"
+}
+
+
